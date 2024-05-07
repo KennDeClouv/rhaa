@@ -1,0 +1,80 @@
+* {
+    font-family: "Chewy", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #E6A4B4;
+    --primary-rgb: 230, 164, 180;
+    --secondary: #FFF8E3;
+    --secondary-rgb: 255, 248, 227;
+}
+
+::-webkit-scrollbar{
+    appearance: none;
+    display: none;
+}
+
+.frame{
+    z-index: 100;
+}
+
+.frame div{
+    position: fixed;
+    background-color: var(--secondary);
+}
+
+.frame div:nth-child(1){
+    width: 100vw;
+    height: 8px;
+    top: 0;
+    left: 0;
+}
+.frame div:nth-child(2){
+    width: 8px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
+.frame div:nth-child(3){
+    width: 100vw;
+    height: 8px;
+    bottom: 0;
+    left: 0;
+}
+.frame div:nth-child(4){
+    height: 100vh;
+    width: 8px;
+    top: 0;
+    left: 0;
+}
+
+.frame svg{
+    position: fixed;
+}
+.frame svg:nth-child(5){
+    top: 0;
+    left: 0;
+}
+.frame svg:nth-child(6){
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+.frame svg:nth-child(7){
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+.frame svg:nth-child(8){
+    bottom: 0;
+    left: 0;
+    transform: rotate(-90deg);
+}
+
+section{
+    margin: 8px;
+    border-radius: 10px;
+}
